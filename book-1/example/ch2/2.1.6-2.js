@@ -1,5 +1,5 @@
 class Human {
-  constructor(type = 'human') {
+  constructor(type = 'human') { //생성자 함수
     this.type = type;
   }
 
@@ -12,7 +12,7 @@ class Human {
   }
 }
 
-class Zero extends Human {
+class Zero extends Human { //Human 함수 상속
   constructor(type, firstName, lastName) {
     super(type);
     this.firstName = firstName;

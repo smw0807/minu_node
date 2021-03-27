@@ -1,4 +1,4 @@
-var Human = function(type) {
+var Human = function(type) { //생성자 함수
   this.type = type || 'human';
 };
 
@@ -10,7 +10,7 @@ Human.prototype.breathe = function() {
   alert('h-a-a-a-m');
 };
 
-var Zero = function(type, firstName, lastName) {
+var Zero = function(type, firstName, lastName) { //human 함수 상속
   Human.apply(this, arguments);
   this.firstName = firstName;
   this.lastName = lastName;

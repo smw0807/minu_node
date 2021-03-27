@@ -9,3 +9,6 @@ const candyMachine = {
   },
 };
 const { getCandy, status: { count } } = candyMachine;
+
+console.log(getCandy);
+console.log(count);
