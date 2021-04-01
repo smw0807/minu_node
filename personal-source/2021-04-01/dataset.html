@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <!-- <script src='main.js'></script> -->
+</head>
+<body>
+  <ul>
+    <li data-id="1" data-user-job="programmer">Zero</li>
+    <li data-id="2" data-user-job="designer">Nero</li>
+    <li data-id="3" data-user-job="programmer">Hero</li>
+    <li data-id="4" data-user-job="ceo">Kero</li>
+  </ul>
+  <span data-id="a" data-user-job="a"></span><br>
+  <span data-id="b" data-b="b"></span><br>
+  <input type="text" data-id="c" data-c-test="c"></input><br>
+  <span data-id="d" data-d-test="d"></span>
+</body>
+<script>
+  console.log(document.querySelector('li').dataset);
+  console.log('check!');
+  let test = $('span').data('userJob');
+  console.log(test); //a
+  let test2 = $('span').data('a');
+  console.log(test2); // undefined ??? data-뒤에 한글자는 안되는 건가??
+  let test3 = $('input').data('cTest');
+  console.log(test3); //c
+  let test4 = $('span').data('dTest');
+  console.log(test4); //undefined ??? 이건 왜??
+</script>
+</html>
