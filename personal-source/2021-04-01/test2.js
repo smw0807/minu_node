@@ -9,7 +9,7 @@ function a () {
   console.log('a()');
 }
 
-module.exports = {
+export default {
   "text": text,
   "obj": obj,
   "c": a
