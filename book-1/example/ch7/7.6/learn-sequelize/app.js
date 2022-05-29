@@ -15,7 +15,7 @@ nunjucks.configure('views', {
   express: app,
   watch: true,
 });
-sequelize.sync({ force: false })
+sequelize.sync({ force: false }) //true로 설정하면 서버 실행 시마다 테이블을 재생성한다. 테이블을 잘못 만든 경우에 true로 설정
   .then(() => {
     console.log('데이터베이스 연결 성공');
   })
